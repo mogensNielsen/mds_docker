@@ -1,0 +1,17 @@
+version: 1
+send_anonymous_usage_stats: false
+default_environment: dev
+environments:
+- name: dev
+  #env:
+  #  DB_LOCATION: /project/data/dev/data.duckdb
+- name: test
+  #env:
+  #  DB_LOCATION: /project/data/test/data.duckdb
+- name: prod
+  #env:
+  #  DB_LOCATION: /project/data/prod/data.duckdb
+plugins:
+  extractors:
+    - name: tap-rickandmorty
+      pip-url: git+https://github.com/clrcrl/tap-rickandmorty.git
