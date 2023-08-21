@@ -21,5 +21,5 @@ ARG MELTANO_PROJ_ROOT=project
 WORKDIR /${MELTANO_PROJ_ROOT}/${PROJECT}
 RUN meltano init ${PROJECT}
 
-# This doesnæt do anything at the moment because nothing is running on that port
+# This doesn't do anything at the moment because nothing is running on that port
 #EXPOSE 5000
