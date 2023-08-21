@@ -5,6 +5,7 @@ RUN apt update \
   curl \
   python3-pip \
   python3-venv \
+  git \
   && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
