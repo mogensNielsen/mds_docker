@@ -2,4 +2,4 @@
 
 ## So far
 
-Even though I have exposed port 5000, I can't reach Meltano from my local browser
+Am able to create an image that install Meltano and and initializes a project
