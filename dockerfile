@@ -20,7 +20,7 @@ RUN pipx install meltano
 ARG PROJECT=mds_docker_box
 ARG MELTANO_PROJ_ROOT=project
 WORKDIR /${MELTANO_PROJ_ROOT}/${PROJECT}
-RUN meltano init ${PROJECT}
+RUN meltano init .
 
 # This doesn't do anything at the moment because nothing is running on that port
 #EXPOSE 5000
